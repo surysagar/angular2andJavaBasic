@@ -1,0 +1,6 @@
+use npm start to run this project.
+
+please see the logs which are provided to learn how angular2 works step by step..
+
+project downloaded from 
+http://www.angularjs4u.com/angularjs2/angular-2-admin-dashboards/s

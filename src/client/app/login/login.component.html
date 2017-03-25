@@ -1,0 +1,138 @@
+<div class="login-page">
+	<div class="row">
+		<div class="col-lg-4 col-lg-offset-4">
+        	<img src="assets/img/SB-admin.png" width="150px" class="user-avatar" />
+			<h1>SB Admin BS 4 Angular2</h1>
+			<form role="form">
+				<div class="form-content">
+					<div class="form-group">
+						<input type="text" ng-model="name" class="form-control input-underline input-lg" id="" placeholder="Email">
+					</div>
+
+					<div class="form-group">
+						<input type="password" class="form-control input-underline input-lg" id="" placeholder="Password">
+					</div>
+				</div>
+				<a class="btn rounded-btn" routerLink="/dashboard/home"> Log in </a>				
+				&nbsp;
+				<a type="submit" class="btn rounded-btn" routerLink="/signup">Register</a>
+			</form>
+		</div>	
+	</div>
+</div>
+
+			<!--Types
+
+			Many people do not realize it, but JavaScript does in fact have types, they're just "duck typed", which roughly means that the programmer does not have to think about them. JavaScript's types also exist in TypeScript:
+			boolean ==>(true/false)
+			number ==> integers, floats, Infinity and NaN
+			string ==> characters and strings of characters
+			[] ==> Arrays of other types, like number[] or boolean[]
+			{} ==> Object literal
+			undefined ==> not set
+			TypeScript also adds
+			enum enumerations like { Red, Blue, Green }
+			any use any type
+			void ==> nothing
+			Primitive type example:
+			
+			let isDone: boolean = false;
+			let height: number = 6;
+			let name: string = "bob";
+			let list: number[] = [1, 2, 3];
+			let list: Array<number> = [1, 2, 3];
+			enum Color {Red, Green, Blue};
+			let c: Color = Color.Green;
+			let notSure: any = 4;
+			notSure = "maybe a string instead";
+			notSure = false; // okay, definitely a boolean
+
+			function showMessage(data: string): void {
+			  alert(data);
+			}
+			showMessage('hello'); 
+
+
+
+
+
+
+
+			
+
+
+
+			</h4>
+			<h4>arrow function:this.toppings.forEach((topping, i) => {}</h4>
+			<h4>normal string: console.log('hello my name is ' + name + ' I am ' + age + ' years old');</h4>
+			<h4>template string: var name = 'Sam' & var age = 42; console.log('hello my name is ${name}, and I am ${age} years old');</h4>
+			<h4>modules:  A module in ES6 is single file that allows code and data to be isolated, it helps in organizing and grouping code logically.
+			All code and data inside the module has file scope, what this means is they are not accessible from code outside the module.
+			export const pi = 3.141592;
+			export const circumference = diameter => diameter * pi;</h4>
+
+			<h4>loading modules from a browser: https://angular-2-training-book.rangle.io/handout/features/es6_modules.html</h4>
+
+			<h4>Union type:  set of types (either/or)
+			function admitAge (age: number|string): string {
+			  return `I am ${age}, alright?!`;
+			}</h4>
+
+			<h4>
+			Function Type Definitions:
+
+			Function type annotations can get much more specific than typescripts built-in Function type. Function type definitions allow you to attach a function signature to it's own type.
+			type MaybeError = Error | null;
+			type Callback = (err: MaybeError, response: Object) => void;
+
+			function sendRequest (cb: Callback): void {
+			  if (cb) {
+			    cb(null, {});
+			  }
+			}
+
+
+			</h4>
+
+			<h4>
+
+				Interfaces:
+
+				An interface is a TypeScript artifact, it is not part of ECMAScript. An interface is a way to define a contract on a function with respect to the arguments and their type. Along with functions, an interface can also be used with a Class as well to define custom types.
+				An interface is an abstract type, it does not contain any code as a class does. It only defines the 'signature' or shape of an API. During transpilation, an interface will not generate any code, it is only used by Typescript for type checking during development.
+				Here is an example of an interface describing a function API:
+
+				interface Callback {
+				  (error: Error, data: any): void;
+				}
+
+				function callServer(callback: Callback) {
+				  callback(null, 'hi');
+				}
+
+				callServer((error, data) => console.log(data));  // 'hi'  *****
+				callServer('hi');                                // tsc error
+
+
+				Sometimes JavaScript functions can accept multiple types as well as varying arguments, that is, they can have different call signatures. Interfaces can be used to specify this.
+				interface PrintOutput {
+				  (message: string): void;    // common case
+				  (message: string[]): void;  // less common case
+				}
+
+				let printOut: PrintOutput = (message) => {
+				  if (Array.isArray(message)) {
+				    console.log(message.join(', '));
+				  } else {
+				    console.log(message);
+				  }
+				}
+
+				printOut('hello');       // 'hello'
+				printOut(['hi', 'bye']); // 'hi, bye'
+
+
+			</h4>
+
+
+			-->

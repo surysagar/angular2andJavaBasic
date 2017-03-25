@@ -1,0 +1,16 @@
+https://www.youtube.com/watch?v=24rGqtxuLhc
+
+you can tell spring you decide which datasource.
+@autowired :searches already implemented components
+
+first :  @configuration
+second : main component will scan first with @componentscan(basePackage = "myproject"
+third: context configuration will be done with @contextConfiguration(classes = javaTestClass.class)
+
+
+ need to get in and check what needs to be done and what are the action points.
+
+spring provide basic level of aspect orient programming..
+Every level log statement acn be done by AOPL.
+aspect Oriented programming: what are different things you want to insercept.
+objects for aspect oriented progg;
