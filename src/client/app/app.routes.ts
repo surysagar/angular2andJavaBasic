@@ -1,4 +1,4 @@
-console.log("sag: this is main means app.route")  
+console.log('sag: this is main means app.route');
 
 import { Routes } from '@angular/router';
 

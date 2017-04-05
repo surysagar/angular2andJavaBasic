@@ -50,6 +50,10 @@ export class HomeComponent implements OnInit {
 
 	];
 
+	public total: number = 0;
+	public self: object = this; // create empty object by getting reference of this
+
+
 	ngOnInit(){
      //called after the constructor and called  after the first ngOnChanges() 
      this.visibleRows.forEach((ele) =>{
@@ -64,14 +68,13 @@ export class HomeComponent implements OnInit {
      })
   	}
 
-	public total: number = 0;
-	public self: object = this; // create empty object by getting reference of this
-
+	
 	addTodo(row: any) {
 		//console.log(this.haha);
 		self.total = 0;  // make it clear
 		console.log(row);
-		row.columns.forEach((ele) => {
+		row.columns: Array;
+		row.columns.forEach((ele:any) => {
 			console.log(typeof ele.cellValue);
              self.total += parseInt(ele.cellValue);
 
@@ -84,6 +87,9 @@ export class HomeComponent implements OnInit {
 	countAlert(){
 		alert(self.total);
 	}
+
+
+
 
 	/* END */
 	/* Alert component */

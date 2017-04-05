@@ -32,6 +32,6 @@ import { SharedModule } from './shared/shared.module';
 
 export class AppModule {
 	constructor() {
-    	console.log("sag:this is app module-class")            
-  	}  
- }
+    	console.log('sag:this is app module-class');
+    }
+}

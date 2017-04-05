@@ -4,3 +4,11 @@ please see the logs which are provided to learn how angular2 works step by step.
 
 project downloaded from 
 http://www.angularjs4u.com/angularjs2/angular-2-admin-dashboards/s
+
+uploaded project on git  with folowing commands
+
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/surysagar/angular2andJavaBasic.git
+git push -u origin master
