@@ -33,6 +33,17 @@ origin	https://github.com/surysagar/angular2andJavaBasic.git (fetch)
 origin	https://github.com/surysagar/angular2andJavaBasic.git (push)
 
 
+::myrepo> git fetch //so that your local repository gets all the new info from github.
+::myrepo> git fetch && git checkout // if git checkout doesn't happen in any case.
+
+
+
+::rm -rf "folder/file name" // folder/file name you want to remove
+::git checkout -b "new branch from dev branch"
+::git add src/name/file.ext //add a file
+::git commit -m "commitsany"
+::git push origin "branchname"
+
 ::To check branch information: use git branch -a
 
 C02T140BGTFL:angular2andJavaBasic e071313$ git branch -a

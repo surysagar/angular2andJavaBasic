@@ -1,0 +1,15 @@
+install:
+  - IIEF function private data can only call by defining function in IIEF and call from outside
+
+  (function(){
+  var allWalletslength = null;
+    window.getAllWalletsLength = function(){ // window global function added.
+      return allWalletslength;
+    };
+
+    function xyz(){ // logic to alter length }
+
+  }())
+
+
+..call from outside like getAllWalletsLength() // get lentgh;
