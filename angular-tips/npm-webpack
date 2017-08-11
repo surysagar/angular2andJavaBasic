@@ -1,0 +1,70 @@
+package.json:
+core.js is a npm depedency generally use in angular2 and it helps for cross browser it is even better than shims and polyfills
+rxjs is a http and observables depedency package.
+zpne.js is execution contect process async task, allow angular to know whwn asyc operation complete so angular process change detection.
+	eq. settimeout or like apply.(don't need to use directly)
+
+
+{
+	"name" : "angular2Project",
+	"version" : "0.1.0",
+	"scripts" : {   
+		"build" : ........// build project in dist project
+	}
+	depedencies :{
+	"coe.js : "2.0.0",    // normal depedencies helper depedencies for code
+	"rx.js" : "2.0.0"
+	}
+	"devDepedencies" : {   // dev depedencied use for development
+	"typescript" : "1.8.10",  //Typescript is dev depedency it is been install npm install --save-dev typescript@1.8.10
+	"tsloader" : "0.9.0",
+	"typings" : "9.0.8",
+	"webpack" : "1.13.2"   // npm install --save-dev webpack
+
+
+	}
+}
+
+
+
+tsconfig.json
+
+{
+	{
+		"compilerOptions" : {  
+			"target" : "es5",  // what sort /format in which code generate
+			"experimentaDecorator" : true, // angular use decorator so
+			"emitDecoratorMetadata" : true // metadata specified in components so
+		}
+	}
+}
+
+https://www.npmjs.com/package/webpack  ******
+webpac: bundles all code in one file so only one http request.
+this is js file for configuration unlike other config files, other config files are .json files.
+this is node module like common.js
+
+
+webpack.config.js
+
+	var webpack = require("webpack");
+
+	module.exports = {
+
+		entry : './src/main.ts',
+		output: {
+			path: './dist',
+			filename : 'app.bundle.js'
+		},
+		module: {
+			loades: [{test: ......, loader:'ts'}]
+		},
+		resolve: {
+			extensions: ['', '.js', '.ts'] // means '' is empty folder
+		}
+	}
+
+
+Loders:
+webpack enables use of loaders to preprocess files. This allows you to bundle any static resource way beyond JavaScript. You can easily write your own loaders using Node.js.
+eq. amietsh has done json chunks..
