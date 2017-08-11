@@ -1,16 +1,19 @@
+{
+  "git": [""],
+  "rules": {
+    "Create file": cat sagar.txt,
+    "to see branchname, its status": gst,
+    "eofline": true,
+
+  }
+}
+
+
+
+
+
 Git:
 
-::Create file
-/myrepo> cat sagar.txt.  // create your own file
-This is my first file line
-
-/myrepo> cat >> sagar.txt.  // edit sagar.txt file
-
-myrepo>ls    // to see application/physical files like sagar.txt
-Sagar.txt
-
-/myrepo> ls-la.   // files with details as a table view
-/myrepo>ls -a.   //to see all the files including git
 
 
 /myrepo>git branch     //to know which branch u r using
@@ -44,6 +47,8 @@ origin	https://github.com/surysagar/angular2andJavaBasic.git (push)
 ::git commit -m "commitsany"
 ::git push origin "branchname"
 
+::gst.  // show your branchname and status of branch as well
+
 ::To check branch information: use git branch -a
 
 C02T140BGTFL:angular2andJavaBasic e071313$ git branch -a
@@ -60,7 +65,36 @@ If you haven't connected your local repository to a remote server, add the serve
 
 
 
-Esc + “ ; ”
-W. Save
-Q. Quit
+
+
+
+git log :  will show you all the local commits with the last commit when you create / checkout any branch.
+
+commit 482758275
+Author: 777 <saga@abc.com>
+Date:   Tue Aug 1 16:16:23 2017 +0530
+
+    Added "back" button on audit page.
+
+commit 668869
+Author: 777 <saga@abc.com>
+Date:   Mon Jul 31 17:23:04 2017 +0530
+
+    filtered only changed audit properties
+
+commit 8686699
+Merge: 5a26be4 861aae1
+Author: other person <otherperson@cyms.com>
+Date:   Fri Jul 28 02:23:49 2017 -0500
+
+    Merge pull request #141 in MPASS/switch-admin-portal from feature/S241660-Rename-Tokenization-required-No-Fpan to dev
+    
+    * commit 'r43534534545':
+      any comment
+      Label change from Tokenisation Check to No Fpan
+      spec correction
+
+
+C02T140BGTFL:switch-admin-portal e071313$ git show 323424234   // git show commitId .. will show you details
+
 
