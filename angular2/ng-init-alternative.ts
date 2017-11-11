@@ -7,18 +7,17 @@ use ng-oninit
 or make a directive 
 
 @Directive({
-	selector: 'myngInit',
-	exportAs: 'myngInit'
-
-})
+  selector: 'ngInit',
+  exportAs: 'ngInit'
+}) 
 
 export class NgInit {
-	@input() values: any = {};
+  @Input() values: any = {};
 
-	@input() ngInit;
-	ngOnInit() {
-		if(this.ngInit){this.ngInit()}
-	}
+  @Input() ngInit;
+  ngOnInit() {
+    if(this.ngInit) { this.ngInit(); }
+  }  
 }
 
 

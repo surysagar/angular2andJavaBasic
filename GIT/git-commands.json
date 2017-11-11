@@ -4,16 +4,22 @@
     "Create file": cat sagar.txt,
     "to see branchname, its status": gst,
     "eofline": true,
+    "working directory": pwd
 
   }
 }
 
-
-
+::rm -rf "folder/file name" // folder/file name you want to remove
+::git checkout -- <file>...// to discard changes in working directory
+::git checkout -b "new branch from dev branch" 
+::git add src/name/file.ext //add a file
+::git commit -m "commitsany"
+::git push origin "branchname"
 
 
 Git:
 
+Remove any perticular file from repo : e071313$ rm package-lock.json
 
 
 /myrepo>git branch     //to know which branch u r using
@@ -40,12 +46,6 @@ origin	https://github.com/surysagar/angular2andJavaBasic.git (push)
 ::myrepo> git fetch && git checkout // if git checkout doesn't happen in any case.
 
 
-
-::rm -rf "folder/file name" // folder/file name you want to remove
-::git checkout -b "new branch from dev branch"
-::git add src/name/file.ext //add a file
-::git commit -m "commitsany"
-::git push origin "branchname"
 
 ::gst.  // show your branchname and status of branch as well
 

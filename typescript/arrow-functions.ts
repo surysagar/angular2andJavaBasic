@@ -1,8 +1,8 @@
-1. You don't need to keep typing function
+1. You dont need to keep typing function
 2. It lexically captures the meaning of this
 3. It lexically captures the meaning of arguments
 
-var inc = (x)=>x+1;
+var inc = (x)=>x+1; //anonomous function declaration
 
 // in in typescript
 class Person {

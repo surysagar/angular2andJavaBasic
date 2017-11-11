@@ -36,10 +36,11 @@
   "author": "Nitin Kumar Mishra",
   "license": "MIT",
   "devDependencies": {
-    "@angular/cli": "^1.2.0",
+    "@angular/cli": "^2.3.1",
     "@angular/compiler-cli": "0.6.1",
     "@angular/platform-server": "2.0.0",
     "@angular/tsc-wrapped": "0.3.0",
+    "@ngtools/webpack": "^1.1.2",
     "@types/async": "2.0.31",
     "@types/browser-sync": "0.0.32",
     "@types/connect-livereload": "0.5.29",

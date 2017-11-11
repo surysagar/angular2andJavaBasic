@@ -12,6 +12,5 @@ import { Component } from '@angular/core';
 
 export class LoginComponent {
 	constructor() {
-    console.log("sag: this is login main component");
   }      	
 }
